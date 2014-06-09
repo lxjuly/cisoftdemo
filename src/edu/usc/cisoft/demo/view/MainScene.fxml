@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="680.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.usc.cisoft.demo.view.MainSceneController">
+   <children>
+      <TabPane fx:id="dashBoard" layoutY="-20.0" prefHeight="681.0" prefWidth="1000.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <tabs>
+          <Tab text="Spatial Context">
+               <content>
+                  <SplitPane dividerPositions="0.849" prefHeight="160.0" prefWidth="200.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <ImageView fitHeight="537.0" fitWidth="799.0" pickOnBounds="true" preserveRatio="true" translateY="20.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="-7.685302734375">
+                                 <image>
+                                    <Image url="@../../../../../../pic1.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <TilePane fx:id="riskLevels" layoutX="24.0" layoutY="20.0" prefHeight="416.0" prefWidth="100.0">
+                                 <children>
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ff2f1f" height="104.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fbff1b" height="104.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="104.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+                                    <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f8c9a4" height="104.0" stroke="BLACK" strokeType="INSIDE" width="100.0" />
+                                 </children>
+                              </TilePane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </content>
+            </Tab>
+          <Tab text="Functionl Context">
+               <content>
+                  <ImageView fitHeight="483.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true" translateX="6.0">
+                     <image>
+                        <Image url="@../../../../../../pic2.png" />
+                     </image>
+                  </ImageView>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
